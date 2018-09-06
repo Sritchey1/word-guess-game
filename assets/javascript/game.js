@@ -9,7 +9,6 @@ var wins = 0;
 var losses = 0;
 
 
-var keySound = new Audio("");
 
 
 function startGame() {
