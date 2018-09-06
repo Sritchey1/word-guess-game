@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hang Man</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
+    <script src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="header"></div>
+    </header>
+        <div class="container">
+        </div>
+        <table class="game-content">
+            <thead>
+                <tr>
+                    <th colspan="2"><span class="hangTitle">Cinema Hangman</span>
+                    <img id="youwin-image" src="https://media.giphy.com/media/ytwDCy0VaraSrCu55C/giphy.gif" alt="Winning Image" />
+                    <img id="gameover-image" src="https://media.giphy.com/media/3o7buaRhRryzFTjWUg/giphy.gif" alt="Game Over Image" />
+                    <h1 id="pressKeyTryAgain">Press Any Key to Try Again!</h1>
+                    </th>
+                </tr>
+            </thead>  
+            <tbody>
+                 <tr>
+                    <td><h3 style="padding-bottom:5px;"><u>Press any Key to get started!</u></h3>
+                    <h2>HINT: Choose one word movie titles that were winners of the Academy Award for Best Picture.</h2>
+                    <h4>Wins:</h4>  <div id="gameWins"></div>
+                    <h4>Current Film:</h4> <div id="currentWord"></div>
+                    <h4>Losses:</h4>  <div id="gameLosses"></div>
+                    <h4 style="padding-top:10px;">Guesses Left:</h4>  <div id="guessesLeft"></div>
+                    <h4>All Guesses:</h4>  <div id="userGuesses"></div>
+                    </td>
+                </tr>
+            </tbody>      
+        </table>
+        </div>    
+    <footer class="footer">
+        
+        <div class="container">
+        </div>
+    </footer>
+    <script>
+    
+        startGame();
+        refreshScreen();
+    </script>
+</body>
+</html>
+           
+</body>
+</html>
