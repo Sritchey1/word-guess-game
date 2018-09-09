@@ -105,7 +105,7 @@ function makeGuess(letter) {
 };
 
 
-document.onkeydown = function (event) {
+document.onkeyup = function (event) {
 
     if (finishedGame) {
         startGame();
@@ -113,7 +113,7 @@ document.onkeydown = function (event) {
     } else {
 
         if (event.keyCode >= 65 && event.keyCode <= 90) {
-            keySound.play();
+            
             makeGuess(event.key.toUpperCase());
             refreshScreen();
             checkWin();
